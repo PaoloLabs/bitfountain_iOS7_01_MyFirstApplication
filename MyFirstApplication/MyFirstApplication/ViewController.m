@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize titleLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonPressed:(UIButton *)sender {
+    self.titleLabel.text = @"Hello Class";
+}
 @end
